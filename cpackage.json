@@ -1,0 +1,47 @@
+{
+	"name": "lua",
+	"projects": [
+		{
+			"name": "lua",
+			"type": "static lib",
+			"language": "C11",
+			"includeFolders": {
+				"public": "src"
+			},
+			"files": [
+				"src/lapi.c",		"src/lcode.c",		"src/lctype.c",		"src/ldebug.c",		"src/ldo.c",
+				"src/ldump.c",		"src/lfunc.c",		"src/lgc.c",		"src/llex.c",		"src/lmem.c",
+				"src/lobject.c",	"src/lopcodes.c",	"src/lparser.c",	"src/lstate.c",		"src/lstring.c",
+				"src/ltable.c",		"src/ltm.c",		"src/lundump.c",	"src/lvm.c",		"src/lzio.c",
+				"src/lauxlib.c",	"src/lbaselib.c",	"src/lcorolib.c",	"src/ldblib.c",		"src/liolib.c",
+				"src/lmathlib.c",	"src/loadlib.c",	"src/loslib.c",		"src/lstrlib.c",	"src/ltablib.c",
+				"src/lutf8lib.c",	"src/linit.c"
+			],
+			"description": "The LUA library"
+		},
+		{
+			"name": "lua-interpreter",
+			"type": "shared lib",
+			"language": "C11",
+			"includeFolders": {
+				"public": "src"
+			},
+			"files": [ "src/lua.c" ],
+			"dependencies": [ "self:lua" ],
+			"description": "A shared library project. Hover mouse over a `type` field to see available fields."
+		},
+		{
+			"name": "lua-compiler",
+			"type": "shared lib",
+			"language": "C11",
+			"includeFolders": {
+				"public": "src"
+			},
+			"files": [ "src/luac.c" ],
+			"dependencies": [ "self:lua" ],
+			"description": "A shared library project. Hover mouse over a `type` field to see available fields."
+		}
+	],
+	"version": "5.4.3",
+	"description": "Lua C library"
+}
