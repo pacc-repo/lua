@@ -1,4 +1,4 @@
-# Lua C librarylua.org
+# Lua C library
 
 This is a port of [Lua](https://lua.org) library for [pacc](https://github.com/PoetaKodu/pacc) build tool.
 
