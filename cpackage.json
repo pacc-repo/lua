@@ -27,8 +27,7 @@
 				"public": "src"
 			},
 			"files": [ "src/lua.c" ],
-			"dependencies": [ "self:lua" ],
-			"description": "A shared library project. Hover mouse over a `type` field to see available fields."
+			"dependencies": [ "self:lua" ]
 		},
 		{
 			"name": "lua-compiler",
@@ -38,8 +37,7 @@
 				"public": "src"
 			},
 			"files": [ "src/luac.c" ],
-			"dependencies": [ "self:lua" ],
-			"description": "A shared library project. Hover mouse over a `type` field to see available fields."
+			"dependencies": [ "self:lua" ]
 		}
 	],
 	"version": "5.4.3",
